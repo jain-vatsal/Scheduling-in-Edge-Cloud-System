@@ -1,0 +1,32 @@
+------------------------------ SCHEDULE FOR 2 MACHINES ------------------------------
+
+Time stamp => 1
+Chunk 2 of job 3 is executed by Machine 1
+Chunk 3 of job 4 is executed by Machine 1
+Chunk 5 of job 3 is executed by Machine 1
+Chunk 10 of job 3 is executed by Machine 1
+Chunk 4 of job 2 is executed by Machine 2
+Chunk 6 of job 2 is executed by Machine 2
+
+Time stamp => 2
+Chunk 1 of job 1 is executed by Machine 1
+Chunk 2 of job 1 is executed by Machine 1
+Chunk 3 of job 3 is executed by Machine 1
+
+--------------------------------------------------------
+
+
+CHUNK ASSIGNMENT TO MACHINES (max number of distinct chunks to a machine => b = 5) :-
+
+Assigned chunks to Machine 1 = 1 2 3 5 10 
+Assigned chunks to Machine 2 = 4 6 
+
+--------------------------------------------------------
+
+
+FINISHING TIME OF JOBS :- 
+
+For Job = 1, it's execution is finished at time 2, which does not exceed it's deadline = 5
+For Job = 2, it's execution is finished at time 1, which does not exceed it's deadline = 5
+For Job = 3, it's execution is finished at time 1, which does not exceed it's deadline = 3
+For Job = 4, it's execution is finished at time 1, which does not exceed it's deadline = 2
